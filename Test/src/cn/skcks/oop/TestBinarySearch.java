@@ -15,7 +15,7 @@ public class TestBinarySearch {
 		Arrays.sort(values);
 
 		System.out.println(Arrays.toString(values));
-		System.out.println(Search(values, search));
+		System.out.println("Ë÷ÒýÖµÎª£º" + Search(values, search));
 
 	}
 
@@ -33,7 +33,7 @@ public class TestBinarySearch {
 			if (search > values[mid]) {
 				low = mid + 1;
 			} 
-			else if (search < values[high]) {
+			if (search < values[mid]) {
 				high = mid - 1;
 			}
 
