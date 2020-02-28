@@ -6,8 +6,8 @@ public class TestOverride {
 		System.out.println(t);
 		System.out.println(t.toSuperString());
 
-		User u1 = new User(1000, "Ê±¿Õ");
-		User u2 = new User(1000, "Ê±¿Õ_Sk");
+		User u1 = new User(1000, "æ—¶ç©º");
+		User u2 = new User(1000, "æ—¶ç©º_Sk");
 		System.out.println(u1 == u2);
 		System.out.println(u1.equals(u2));
 		

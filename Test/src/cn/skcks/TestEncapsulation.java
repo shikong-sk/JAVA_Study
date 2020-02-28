@@ -3,14 +3,14 @@ package cn.skcks;
 public class TestEncapsulation {
 	public static void main(String[] args) {
 		Human human = new Human();
-//		human.age = 20; 私有属性不可见
-		human.name = "时空";
+//		human.age = 20; 绉佹湁灞炴�т笉鍙
+		human.name = "鏃剁┖";
 	}
 
 }
 
 class Boy extends Human{
 	void getAge(int age) {
-//		System.out.println(age); 子类无法使用父类的私有属性和方法
+//		System.out.println(age); 瀛愮被鏃犳硶浣跨敤鐖剁被鐨勭鏈夊睘鎬у拰鏂规硶
 	}
 }

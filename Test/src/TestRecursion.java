@@ -5,15 +5,15 @@ public class TestRecursion {
 	public static void main(String[] args) {
 		final long n = 3;
 		
-		System.out.println("µÝ¹éËã·¨£º");
+		System.out.println("é€’å½’ç®—æ³•ï¼š");
 		long t1 = System.currentTimeMillis();
-		System.out.println( n + "µÄ½×³ËÎª£º" + recursive(n)); 
+		System.out.println( n + "çš„é˜¶ä¹˜ä¸ºï¼š" + recursive(n)); 
 		long t2 = System.currentTimeMillis();
-		System.out.println("ºÄÊ±£º"+ (t2-t1) + "ms");
+		System.out.println("è€—æ—¶ï¼š"+ (t2-t1) + "ms");
 		
 		System.out.println();
 		
-		System.out.println("µü´úËã·¨£º");
+		System.out.println("è¿­ä»£ç®—æ³•ï¼š");
 		
 		long i = n;
 		long res = i;
@@ -24,9 +24,9 @@ public class TestRecursion {
 			System.out.println(n + "x" + (i-1) + "=" + (i * (i-1)) );
 			res *= i-1;
 		}
-		System.out.println( n + "µÄ½×³ËÎª£º" + res);
+		System.out.println( n + "çš„é˜¶ä¹˜ä¸ºï¼š" + res);
 		t2 = System.currentTimeMillis();
-		System.out.println("ºÄÊ±£º"+ (t2-t1) + "ms");
+		System.out.println("è€—æ—¶ï¼š"+ (t2-t1) + "ms");
 		
 		System.out.println('\n' + six());
 		System.out.println(SIX);

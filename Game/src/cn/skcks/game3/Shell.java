@@ -2,11 +2,9 @@ package cn.skcks.game3;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import java.time.chrono.MinguoChronology;
-import java.util.Random;
 
 /*
- * ÅÚµ¯Àà
+ * ç‚®å¼¹ç±»
  */
 public class Shell extends GameObject {
 	double degree;
@@ -21,7 +19,7 @@ public class Shell extends GameObject {
 		
 		int maxSpeed = 8;
 		int minSpeed = 3;
-		speed = (int)(Math.random() * (maxSpeed - minSpeed) + 1) + minSpeed; // Ëæ»úÅÚµ¯ËÙ¶È
+		speed = (int)(Math.random() * (maxSpeed - minSpeed) + 1) + minSpeed; // éšæœºç‚®å¼¹é€Ÿåº¦
 //		System.out.println(speed);
 		degree = Math.random() * Math.PI * 2;
 	}
@@ -34,7 +32,7 @@ public class Shell extends GameObject {
 		
 		
 		/*
-		 * ÅÚµ¯ÈÎÒâ½Ç¶È·ÉĞĞ
+		 * ç‚®å¼¹ä»»æ„è§’åº¦é£è¡Œ
 		 */
 		x += speed * Math.cos(degree);
 		y += speed * Math.sin(degree);

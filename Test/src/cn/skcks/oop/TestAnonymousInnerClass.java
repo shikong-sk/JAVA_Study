@@ -4,8 +4,8 @@ public class TestAnonymousInnerClass {
 	
 	public static void test(A a) {
 		/*
-		 * ·½·¨ÄÚ²¿Àà £¨¾Ö²¿ÄÚ²¿Àà£©
-		 * ×÷ÓÃÓòÖ»ÏŞÓÚ±¾·½·¨ÄÚ£¬Ö»ÄÜÔÚ·½·¨ÄÚÊ¹ÓÃ
+		 * æ–¹æ³•å†…éƒ¨ç±» ï¼ˆå±€éƒ¨å†…éƒ¨ç±»ï¼‰
+		 * ä½œç”¨åŸŸåªé™äºæœ¬æ–¹æ³•å†…ï¼Œåªèƒ½åœ¨æ–¹æ³•å†…ä½¿ç”¨
 		 */
 		class Inner{
 			public void innerFun() {
@@ -21,8 +21,8 @@ public class TestAnonymousInnerClass {
 		
 		TestAnonymousInnerClass.test(new A() {
 			/*
-			 * ÄäÃûÄÚ²¿Àà
-			 * Ã»ÓĞ¹¹Ôì·½·¨
+			 * åŒ¿åå†…éƒ¨ç±»
+			 * æ²¡æœ‰æ„é€ æ–¹æ³•
 			 */
 			@Override
 			public void a() {

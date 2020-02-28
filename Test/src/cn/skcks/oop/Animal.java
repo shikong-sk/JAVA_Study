@@ -1,18 +1,18 @@
 package cn.skcks.oop;
 
 /*
- * ³éÏóÀà
+ * æŠ½è±¡ç±»
  * 
- * ²»ÄÜÊµÀı»¯ £¬Ö»ÄÜÓÃÀ´¼Ì³Ğ
- * Ã»ÓĞÊµÏÖµÄ·½·¨£¬×ÓÀà±ØĞëÊµÏÖ
- * ¹¹Ôì·½·¨²»ÄÜnewÊµÀı£¬Ö»ÄÜ±»×ÓÀàµ÷ÓÃ
+ * ä¸èƒ½å®ä¾‹åŒ– ï¼Œåªèƒ½ç”¨æ¥ç»§æ‰¿
+ * æ²¡æœ‰å®ç°çš„æ–¹æ³•ï¼Œå­ç±»å¿…é¡»å®ç°
+ * æ„é€ æ–¹æ³•ä¸èƒ½newå®ä¾‹ï¼Œåªèƒ½è¢«å­ç±»è°ƒç”¨
  */
 abstract public class Animal {
 
 	abstract public void shout();
 
 	public void run() {
-		System.out.println("ÅÜ£¡");
+		System.out.println("è·‘ï¼");
 	}
 
 	public static void main(String[] args) {
@@ -26,7 +26,7 @@ class Dog extends Animal {
 	@Override
 	public void shout() {
 		// TODO Auto-generated method stub
-		System.out.println("¹·½ĞÁËÒ»Éù£¡");
+		System.out.println("ç‹—å«äº†ä¸€å£°ï¼");
 	}
 
 }

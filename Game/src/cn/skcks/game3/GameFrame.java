@@ -18,12 +18,12 @@ public class GameFrame extends Frame {
 
 	private static final long serialVersionUID = 1L;
 	
-	Date startTime= new Date(); // ÓÎÏ·ÆğÊ¼Ê±¼ä
+	Date startTime= new Date(); // æ¸¸æˆèµ·å§‹æ—¶é—´
 	Date endTime;
-	int period; // ´æ»îÊ±¼ä
+	int period; // å­˜æ´»æ—¶é—´
 
 	/*
-	 * Ë«»º³å·ÀÖ¹´°¿ÚÉÁË¸
+	 * åŒç¼“å†²é˜²æ­¢çª—å£é—ªçƒ
 	 */
 	private Image offScreenImage = null;
 
@@ -39,13 +39,13 @@ public class GameFrame extends Frame {
 	Image planeImg = GameUtil.getImage("images/plane.png");
 	Image bg = GameUtil.getImage("images/bg.jpg");
 
-	Plane plane = new Plane(planeImg, 250, 250); // ·É»úÀà
+	Plane plane = new Plane(planeImg, 250, 250); // é£æœºç±»
 
 	// Shell Shell = new Shell();
 
-	Shell shell[] = new Shell[10]; // ÅÚµ¯Àà
+	Shell shell[] = new Shell[10]; // ç‚®å¼¹ç±»
 
-	Explode explode; // ±¬Õ¨Àà
+	Explode explode; // çˆ†ç‚¸ç±»
 
 	@Override
 	public void paint(Graphics g) {
@@ -57,17 +57,17 @@ public class GameFrame extends Frame {
 		
 		g.drawImage(bg, 0, 0, null);
 
-		plane.draw(g); // »­·É»ú
+		plane.draw(g); // ç”»é£æœº
 //		Shell.draw(g);
 
 		/*
-		 * »­ÅÚµ¯
+		 * ç”»ç‚®å¼¹
 		 */
 		for (int i = 0; i < shell.length; i++) {
 			shell[i].draw(g);
 
 			/*
-			 * Åö×²¼ì²â
+			 * ç¢°æ’æ£€æµ‹
 			 */
 			if (shell[i].getRect().intersects(plane.getRect())) {
 				plane.live = false;
@@ -77,7 +77,7 @@ public class GameFrame extends Frame {
 				}
 			}
 			
-			// Éú´æÊ±¼ä
+			// ç”Ÿå­˜æ—¶é—´
 			if (!plane.live) {
 				explode.draw(g);
 				if(endTime == null)
@@ -88,8 +88,8 @@ public class GameFrame extends Frame {
 				}
 				
 				g.setColor(Color.WHITE);
-//				g.setFont(new Font("ºÚÌå", 1200, 16)); // ÉèÖÃ×ÖÌå µ«»áÍÏÂıÔËĞĞËÙ¶Èµ¼ÖÂ¿¨¶Ù
-				g.drawString("Éú´æÊ±¼ä£º" + period + "Ãë", 200, 100);
+//				g.setFont(new Font("é»‘ä½“", 1200, 16)); // è®¾ç½®å­—ä½“ ä½†ä¼šæ‹–æ…¢è¿è¡Œé€Ÿåº¦å¯¼è‡´å¡é¡¿
+				g.drawString("ç”Ÿå­˜æ—¶é—´ï¼š" + period + "ç§’", 200, 100);
 				
 				g.setColor(color);
 				g.setFont(font);
@@ -98,15 +98,15 @@ public class GameFrame extends Frame {
 
 	}
 
-	// ÖØ»­´°¿Ú
+	// é‡ç”»çª—å£
 	class PaintThread extends Thread {
 		@Override
 		public void run() {
 			while (true) {
-//				System.out.println("´°¿ÚÖØ»­");
+//				System.out.println("çª—å£é‡ç”»");
 				repaint();
 				try {
-					Thread.sleep(17); // 1000 / 40 = 25 FPS £¬ 1000 / 17 ¡Ö 60 FPS
+					Thread.sleep(17); // 1000 / 40 = 25 FPS ï¼Œ 1000 / 17 â‰ˆ 60 FPS
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
@@ -114,14 +114,14 @@ public class GameFrame extends Frame {
 		}
 	}
 
-	// ¼üÅÌ¼àÌıÀà
+	// é”®ç›˜ç›‘å¬ç±»
 	class KeyMonitor extends KeyAdapter {
 
 		@Override
 		public void keyPressed(KeyEvent e) {
 			// TODO Auto-generated method stub
 			super.keyPressed(e);
-//			System.out.println("°´ÏÂ£º" + e.getKeyCode());
+//			System.out.println("æŒ‰ä¸‹ï¼š" + e.getKeyCode());
 			plane.addDirection(e);
 
 		}
@@ -136,7 +136,7 @@ public class GameFrame extends Frame {
 	}
 
 	/*
-	 * ³õÊ¼»¯´°¿Ú
+	 * åˆå§‹åŒ–çª—å£
 	 */
 
 	public void launchFrame() {
@@ -156,7 +156,7 @@ public class GameFrame extends Frame {
 		addKeyListener(new KeyMonitor());
 
 		/*
-		 * ³õÊ¼»¯ÅÚµ¯
+		 * åˆå§‹åŒ–ç‚®å¼¹
 		 */
 		for (int i = 0; i < shell.length; i++) {
 			shell[i] = new Shell();

@@ -3,7 +3,7 @@ package cn.skcks.oop;
 import java.util.Arrays;
 
 /*
- * ¶þ·Ö·¨²éÕÒ
+ * äºŒåˆ†æ³•æŸ¥æ‰¾
  */
 public class TestBinarySearch {
 	public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class TestBinarySearch {
 		Arrays.sort(values);
 
 		System.out.println(Arrays.toString(values));
-		System.out.println("Ë÷ÒýÖµÎª£º" + Search(values, search));
+		System.out.println("ç´¢å¼•å€¼ä¸ºï¼š" + Search(values, search));
 
 	}
 

@@ -3,13 +3,10 @@ package cn.skcks.game3;
 import java.awt.Graphics;
 import java.awt.Image;
 
-import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory.Default;
-
 import cn.skcks.game.GameUtil;
-import sun.security.util.Length;
 
 /*
- * ±¬Õ¨Àà
+ * çˆ†ç‚¸ç±»
  */
 public class Explode {
 	double x, y;

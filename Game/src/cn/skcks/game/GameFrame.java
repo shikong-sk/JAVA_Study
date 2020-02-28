@@ -30,8 +30,8 @@ public class GameFrame extends JFrame {
 		g.fillRect(100, 100, 40, 40);
 		
 		g.setColor(color);
-		g.setFont(new Font("ËÎÌå",Font.BOLD,50));
-		g.drawString("Ê±¿ÕÂÃĞĞÕß", 200, 200);
+		g.setFont(new Font("å®‹ä½“",Font.BOLD,50));
+		g.drawString("æ—¶ç©ºæ—…è¡Œè€…", 200, 200);
 		g.setFont(font);
 		
 		g.drawImage(ball, 250,250, null);
@@ -39,7 +39,7 @@ public class GameFrame extends JFrame {
 
 	
 	/*
-	 * ³õÊ¼»¯´°¿Ú
+	 * åˆå§‹åŒ–çª—å£
 	 */
 
 	public void launchFrame() {

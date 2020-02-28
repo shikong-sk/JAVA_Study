@@ -6,11 +6,11 @@ import java.util.Scanner;
  */
 public class TestScanner {
 	public static void main(String[] args) {
-		System.out.println("ÇëÊäÈëÃû×Ö£º");
+		System.out.println("è¯·è¾“å…¥åå­—ï¼š");
 		Scanner scanner = new Scanner(System.in);
 		String name = scanner.nextLine();
 		
-		System.out.println("ÇëÊäÈëÄêÁä£º");
+		System.out.println("è¯·è¾“å…¥å¹´é¾„ï¼š");
 		int age = scanner.nextInt();
 		
 		System.out.println("##################");

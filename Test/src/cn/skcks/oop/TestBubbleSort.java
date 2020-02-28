@@ -3,7 +3,7 @@ package cn.skcks.oop;
 import java.util.Arrays;
 
 /*
- * Ã°ÅİÅÅĞò
+ * å†’æ³¡æ’åº
  */
 public class TestBubbleSort {
 	public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class TestBubbleSort {
 		int tmp;
 
 		/*
-		 * »ù´¡Ğ´·¨
+		 * åŸºç¡€å†™æ³•
 		 */
 //		for (int i = 0; i < values.length; i++) {
 //			for (int j = 0; j < values.length - 1 - i; j++) {
@@ -24,10 +24,10 @@ public class TestBubbleSort {
 //				System.out.println(Arrays.toString(values));
 //			}
 //			
-//			System.out.println("################ ÒÑÅÅĞò " + (i+1) + " ¸öÊı×Ö ################");
+//			System.out.println("################ å·²æ’åº " + (i+1) + " ä¸ªæ•°å­— ################");
 //		}
 		/*
-		 * ÓÅ»¯Ğ´·¨
+		 * ä¼˜åŒ–å†™æ³•
 		 */
 		for (int i = 0; i < values.length; i++) {
 			boolean flag = true;
@@ -41,9 +41,9 @@ public class TestBubbleSort {
 				System.out.println(Arrays.toString(values));
 			}
 			
-			System.out.println("################ ÒÑÑ­»· " + (i + 1) + " ´Î ################");
-			if (flag) { // ÈôÒ»Õû¸öÑ­»·¶¼Ã»ÓĞ·¢Éú½»»»ÔòÖ±½Ó½áÊøÅÅĞò
-				System.out.println("################  ÅÅĞò½áÊø   ################");
+			System.out.println("################ å·²å¾ªç¯ " + (i + 1) + " æ¬¡ ################");
+			if (flag) { // è‹¥ä¸€æ•´ä¸ªå¾ªç¯éƒ½æ²¡æœ‰å‘ç”Ÿäº¤æ¢åˆ™ç›´æ¥ç»“æŸæ’åº
+				System.out.println("################  æ’åºç»“æŸ   ################");
 				break;
 			}
 		}

@@ -1,6 +1,6 @@
 package cn.skcks.oop;
 /*
- * Arrays Êı×é¹¤¾ßÀàµÄÊ¹ÓÃ
+ * Arrays æ•°ç»„å·¥å…·ç±»çš„ä½¿ç”¨
  */
 import java.util.Arrays;
 
@@ -12,11 +12,11 @@ public class TestArrays {
 		
 		System.out.println(Arrays.toString(a));
 		
-		Arrays.sort(a); // Êı×éµÄÅÅĞòÊÇ Comparable ½Ó¿ÚµÄÓ¦ÓÃ
+		Arrays.sort(a); // æ•°ç»„çš„æ’åºæ˜¯ Comparable æ¥å£çš„åº”ç”¨
 		System.out.println(Arrays.toString(a));
 		
-		// ¶ş·Ö·¨²éÕÒ £¨±ØĞëÏÈ¶ÔÊı×é½øĞĞÅÅĞò£©£¬ÈôÎ´ÕÒµ½Ôò½á¹ûÎª¸ºÊı
-		System.out.println(" ¸ÃÔªËØµÄË÷ÒıÎª£º" + Arrays.binarySearch(a, 30)); 
+		// äºŒåˆ†æ³•æŸ¥æ‰¾ ï¼ˆå¿…é¡»å…ˆå¯¹æ•°ç»„è¿›è¡Œæ’åºï¼‰ï¼Œè‹¥æœªæ‰¾åˆ°åˆ™ç»“æœä¸ºè´Ÿæ•°
+		System.out.println(" è¯¥å…ƒç´ çš„ç´¢å¼•ä¸ºï¼š" + Arrays.binarySearch(a, 30)); 
 
 	
 		

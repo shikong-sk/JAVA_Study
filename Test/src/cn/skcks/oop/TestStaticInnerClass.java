@@ -8,12 +8,12 @@ public class TestStaticInnerClass {
 }
 
 /*
- * ¾²Ì¬ÄÚ²¿Àà²»ÄÜÖ±½Ó·ÃÎÊÍâ²¿Àà
+ * é™æ€å†…éƒ¨ç±»ä¸èƒ½ç›´æ¥è®¿é—®å¤–éƒ¨ç±»
  */
 class Outer2{
 	static class Inner2{
 		public void say() {
-			System.out.println("¾²Ì¬ÄÚ²¿Àà Test");
+			System.out.println("é™æ€å†…éƒ¨ç±» Test");
 		}
 	}
 }

@@ -6,7 +6,7 @@ public class TestArray {
 		String s2[] = new String[10];
 		
 		/*
-		 * Êı×é¿½±´
+		 * æ•°ç»„æ‹·è´
 		 */
 		System.arraycopy(s1, 1, s2, 6, 2);
 
@@ -49,13 +49,13 @@ public class TestArray {
 		
 		int oldLength = s.length;
 		
-		if (index < 0 || index > s.length-1) { // ÅĞ¶ÏÊÇ·ñºÏ·¨£¬²»ºÏ·¨ÔòÖ±½Ó·µ»ØÊı×é
+		if (index < 0 || index > s.length-1) { // åˆ¤æ–­æ˜¯å¦åˆæ³•ï¼Œä¸åˆæ³•åˆ™ç›´æ¥è¿”å›æ•°ç»„
 			return s;
 		}
 		
-		System.arraycopy(s, index+1, s, index, s.length-index-1); // É¾³ıÏÂ±êÎªindexµÄÔªËØ
+		System.arraycopy(s, index+1, s, index, s.length-index-1); // åˆ é™¤ä¸‹æ ‡ä¸ºindexçš„å…ƒç´ 
 		
-		for (int i = s.length-1; i < oldLength; i++) { // ½«¿ÕÏĞÎ»ÖÃÖÃ¿Õ
+		for (int i = s.length-1; i < oldLength; i++) { // å°†ç©ºé—²ä½ç½®ç½®ç©º
 			s[i] = null;
 		}
 		
@@ -66,7 +66,7 @@ public class TestArray {
 	{
 		int srcIndex = -1;
 		int itemIndex = -1;
-		for(int i = 0;i<s.length;i++) // Ñ­»·±éÀúÔ´Êı×éÖĞÊÇ·ñÓĞ¿ÕÎ»£¬ÓĞÔòÏÈÌîÂú¿ÕÎ»£¬ÔÙÀ©ÈİÊı×é
+		for(int i = 0;i<s.length;i++) // å¾ªç¯éå†æºæ•°ç»„ä¸­æ˜¯å¦æœ‰ç©ºä½ï¼Œæœ‰åˆ™å…ˆå¡«æ»¡ç©ºä½ï¼Œå†æ‰©å®¹æ•°ç»„
 		{
 			if(s[i] == null)
 			{

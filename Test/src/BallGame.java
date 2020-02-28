@@ -34,7 +34,7 @@ public class BallGame extends JFrame {
 		
 	}
 	
-	//´°¿Ú
+	//çª—å£
 	void launch() {
 		setSize(856,500);
 		setLocation(50,50);

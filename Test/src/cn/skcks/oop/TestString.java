@@ -2,39 +2,39 @@ package cn.skcks.oop;
 
 public class TestString {
 	public static void main(String[] args) {
-		String str1 = "abc"; // String Îª²»¿É±ä×Ö·û´®
-		String str2 = "abc"; // ×Ô¶¯´æÈë³£Á¿³Ø
-		String str3 = new String("abc"); // ¶ÀÁ¢µÄ²»Í¬µÄ¶ÔÏó
+		String str1 = "abc"; // String ä¸ºä¸å¯å˜å­—ç¬¦ä¸²
+		String str2 = "abc"; // è‡ªåŠ¨å­˜å…¥å¸¸é‡æ± 
+		String str3 = new String("abc"); // ç‹¬ç«‹çš„ä¸åŒçš„å¯¹è±¡
 		
 		System.out.println(str1 == str2);
-		System.out.println(str1 == str3); // str1 ºÍ str3 ²»ÊÇÍ¬Ò»¸ö¶ÔÏó
+		System.out.println(str1 == str3); // str1 å’Œ str3 ä¸æ˜¯åŒä¸€ä¸ªå¯¹è±¡
 		
-		System.out.println(str3.equals(str1)); // Í¨³£Ê¹ÓÃ equals ±È½Ï×Ö·û´®
+		System.out.println(str3.equals(str1)); // é€šå¸¸ä½¿ç”¨ equals æ¯”è¾ƒå­—ç¬¦ä¸²
 		
 		String s1 = "core Java ";
 		String s2 = "Core Java ";
 		
-		System.out.println(s1.charAt(0)); // ÌáÈ¡ÏÂ±êÎª 0 µÄ×Ö·û
-		System.out.println(s1.equals(s2)); // ±È½Ï×Ö·û´®ÊÇ·ñÏàµÈ
-		System.out.println(s1.equalsIgnoreCase(s2)); // ±È½Ï×Ö·û´®ÊÇ·ñÏàµÈ£¨ºöÂÔ´óĞ¡Ğ´£©
+		System.out.println(s1.charAt(0)); // æå–ä¸‹æ ‡ä¸º 0 çš„å­—ç¬¦
+		System.out.println(s1.equals(s2)); // æ¯”è¾ƒå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰
+		System.out.println(s1.equalsIgnoreCase(s2)); // æ¯”è¾ƒå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼ˆå¿½ç•¥å¤§å°å†™ï¼‰
 		
-		System.out.println(s1.indexOf("Java")); // ²éÕÒ×Ö·û´®ÊÇ·ñ°üº¬ Java ,ÓĞÔò·µ»Ø²éÕÒµ½µÄ×Ö·û´®µÄµÚÒ»¸ö×Ö·ûµÄÏÂ±ê
+		System.out.println(s1.indexOf("Java")); // æŸ¥æ‰¾å­—ç¬¦ä¸²æ˜¯å¦åŒ…å« Java ,æœ‰åˆ™è¿”å›æŸ¥æ‰¾åˆ°çš„å­—ç¬¦ä¸²çš„ç¬¬ä¸€ä¸ªå­—ç¬¦çš„ä¸‹æ ‡
 		System.out.println(s1.indexOf("Shikong"));
 		
-		String s = s1.replace(" ", "&"); // ½«×Ö·û´®ÖĞµÄ¿Õ¸ñÌæ»»Îª &
+		String s = s1.replace(" ", "&"); // å°†å­—ç¬¦ä¸²ä¸­çš„ç©ºæ ¼æ›¿æ¢ä¸º &
 		
 		System.out.println(s);
 		
-		System.out.println(s1.startsWith("core")); // ÊÇ·ñÒÔ core ¿ªÍ·
-		System.out.println(s1.endsWith("shikong")); // ÊÇ·ñÒÔ shikong ½áÎ²
+		System.out.println(s1.startsWith("core")); // æ˜¯å¦ä»¥ core å¼€å¤´
+		System.out.println(s1.endsWith("shikong")); // æ˜¯å¦ä»¥ shikong ç»“å°¾
 		
-		s = s1.substring(5); // ÌáÈ¡×Ó×Ö·û´®£¬´ÓÏÂ±êÎª5¿ªÊ¼µ½×Ö·û´®½áÎ²ÎªÖ¹
+		s = s1.substring(5); // æå–å­å­—ç¬¦ä¸²ï¼Œä»ä¸‹æ ‡ä¸º5å¼€å§‹åˆ°å­—ç¬¦ä¸²ç»“å°¾ä¸ºæ­¢
 		System.out.println(s);
 		
-		s = s1.substring(5,8); // ÌáÈ¡×Ó×Ö·û´®´ÓÏÂ±ê5µ½8-1 (²»°üÀ¨8) ·¶Î§£º[5,8)
+		s = s1.substring(5,8); // æå–å­å­—ç¬¦ä¸²ä»ä¸‹æ ‡5åˆ°8-1 (ä¸åŒ…æ‹¬8) èŒƒå›´ï¼š[5,8)
 		System.out.println(s);
 		
-		s = s1.trim(); // È¥³ı×Ö·û´®Ê×Î²Á½±ßµÄ¿Õ¸ñ
+		s = s1.trim(); // å»é™¤å­—ç¬¦ä¸²é¦–å°¾ä¸¤è¾¹çš„ç©ºæ ¼
 		System.out.println(s);
 	}
 }

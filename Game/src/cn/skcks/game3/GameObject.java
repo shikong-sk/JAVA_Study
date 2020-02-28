@@ -36,7 +36,7 @@ public class GameObject {
 	}
 	
 	/*
-	 * ·µ»ØÎïÌåµÄ¾ØĞÎ ×ö Åö×²¼ì²â
+	 * è¿”å›ç‰©ä½“çš„çŸ©å½¢ åš ç¢°æ’æ£€æµ‹
 	 */
 	public Rectangle getRect() {
 		return new Rectangle((int)x,(int)y,width,height);

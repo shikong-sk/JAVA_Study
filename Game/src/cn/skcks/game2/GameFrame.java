@@ -50,12 +50,12 @@ public class GameFrame extends Frame {
 		
 	}
 
-	// ÖØ»­´°¿Ú
+	// é‡ç”»çª—å£
 	class PaintThread extends Thread {
 		@Override
 		public void run() {
 			while (true) {
-				System.out.println("´°¿ÚÖØ»­");
+				System.out.println("çª—å£é‡ç”»");
 				repaint();
 				try {
 					Thread.sleep(40);
@@ -67,7 +67,7 @@ public class GameFrame extends Frame {
 	}
 
 	/*
-	 * ³õÊ¼»¯´°¿Ú
+	 * åˆå§‹åŒ–çª—å£
 	 */
 
 	public void launchFrame() {

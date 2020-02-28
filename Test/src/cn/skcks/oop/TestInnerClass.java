@@ -3,12 +3,12 @@ package cn.skcks.oop;
 public class TestInnerClass {
 	public static void main(String[] args) {
 //		/*
-//		 * Íâ²¿Àà¶ÔÏó
+//		 * å¤–éƒ¨ç±»å¯¹è±¡
 //		 */
 //		Outer outer = new Outer();
 		
 		/*
-		 * ´´½¨ÄÚ²¿Àà¶ÔÏó
+		 * åˆ›å»ºå†…éƒ¨ç±»å¯¹è±¡
 		 */
 		Outer.Inner inner = new Outer().new Inner();
 		
@@ -17,26 +17,26 @@ public class TestInnerClass {
 }
 
 class Outer{
-	private int age = 10; // Íâ²¿Àà±äÁ¿
+	private int age = 10; // å¤–éƒ¨ç±»å˜é‡
 	
 	public void testOuter() {
 		System.out.println("Outer.testOuter()");
 	}
 	
 	/*
-	 * ·Ç¾²Ì¬ÄÚ²¿Àà
+	 * éé™æ€å†…éƒ¨ç±»
 	 * 
-	 * ¿ÉÒÔÖ±½Ó·ÃÎÊÍâ²¿Àà
-	 * Íâ²¿Àà²»ÄÜÖ±½Ó·ÃÎÊ·Ç¾²Ì¬ÄÚ²¿Àà
-	 * ·Ç¾²Ì¬ÄÚ²¿Àà²»ÄÜÓĞ¾²Ì¬±äÁ¿»ò·½·¨
+	 * å¯ä»¥ç›´æ¥è®¿é—®å¤–éƒ¨ç±»
+	 * å¤–éƒ¨ç±»ä¸èƒ½ç›´æ¥è®¿é—®éé™æ€å†…éƒ¨ç±»
+	 * éé™æ€å†…éƒ¨ç±»ä¸èƒ½æœ‰é™æ€å˜é‡æˆ–æ–¹æ³•
 	 */
 	class Inner{
-		int age = 20; // ÄÚ²¿Àà±äÁ¿
+		int age = 20; // å†…éƒ¨ç±»å˜é‡
 		public void show() {
-			int age = 30; // ¾Ö²¿±äÁ¿
-			System.out.printf("¾Ö²¿±äÁ¿ age = %d \n", age);
-			System.out.printf("ÄÚ²¿Àà±äÁ¿ age = %d \n", this.age);
-			System.out.printf("Íâ²¿ÀàµÄ³ÉÔ±±äÁ¿ age = %d \n", Outer.this.age);
+			int age = 30; // å±€éƒ¨å˜é‡
+			System.out.printf("å±€éƒ¨å˜é‡ age = %d \n", age);
+			System.out.printf("å†…éƒ¨ç±»å˜é‡ age = %d \n", this.age);
+			System.out.printf("å¤–éƒ¨ç±»çš„æˆå‘˜å˜é‡ age = %d \n", Outer.this.age);
 		}
 	}
 }

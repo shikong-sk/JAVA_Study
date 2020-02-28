@@ -1,7 +1,5 @@
 package cn.skcks.game3;
 
-import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.KeyEvent;
@@ -51,8 +49,8 @@ public class Plane extends GameObject {
 //			Color color = g.getColor();
 //			g.setColor(Color.RED);
 //			Font font = g.getFont();
-//			g.setFont(new Font("黑体", 200, 36));
-//			g.drawString("飞机狗带", 200, 200);
+//			g.setFont(new Font("榛戜綋", 200, 36));
+//			g.drawString("椋炴満鐙楀甫", 200, 200);
 //			g.setColor(color);
 //			g.setFont(font);
 		}
@@ -70,7 +68,7 @@ public class Plane extends GameObject {
 	}
 	
 	/*
-	 * 方向处理
+	 * 鏂瑰悜澶勭悊
 	 */
 	public void addDirection(KeyEvent e) {
 		switch (e.getKeyCode()) {

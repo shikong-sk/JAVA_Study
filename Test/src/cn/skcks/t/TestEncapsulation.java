@@ -5,17 +5,17 @@ import cn.skcks.Human;
 public class TestEncapsulation {
 	public static void main(String args[]) {
 		Human human = new Human();
-//		human.age = 20; Ë½ÓĞÊôĞÔ²»¿É¼û
-////		human.name = "Ê±¿Õ"; default ÊôĞÔ²»Í¬°ü²»¿É¼û
-//		human.height; protected ÊôĞÔ Í¬°ü ºÍ ²»Í¬°üµÄ×ÓÀà¿É¼û
+//		human.age = 20; ç§æœ‰å±æ€§ä¸å¯è§
+////		human.name = "æ—¶ç©º"; default å±æ€§ä¸åŒåŒ…ä¸å¯è§
+//		human.height; protected å±æ€§ åŒåŒ… å’Œ ä¸åŒåŒ…çš„å­ç±»å¯è§
 		Boy boy = new Boy();
 		Girl girl = new Girl();
 		
 		System.out.println(human.getClass());
-		System.out.println(boy.getHeight() + "Ã×");
+		System.out.println(boy.getHeight() + "ç±³");
 		
 		girl.setHeight(163);
-		System.out.println(girl.getHeight() + "ºÁÃ×");
+		System.out.println(girl.getHeight() + "æ¯«ç±³");
 		
 		boy.setAge(20);
 		System.out.println(boy.getAge());
@@ -23,7 +23,7 @@ public class TestEncapsulation {
 		boy.setAge(200);
 		System.out.println(boy.getAge());
 		
-		boy.setName("Ê±¿Õ");
+		boy.setName("æ—¶ç©º");
 		System.out.println(boy.getName());
 	}
 	
@@ -35,7 +35,7 @@ public class TestEncapsulation {
 
 class Boy extends Human{
 	public double getHeight() {
-//		System.out.println(age); ×ÓÀàÎŞ·¨Ê¹ÓÃ¸¸ÀàµÄË½ÓĞÊôĞÔºÍ·½·¨
+//		System.out.println(age); å­ç±»æ— æ³•ä½¿ç”¨çˆ¶ç±»çš„ç§æœ‰å±æ€§å’Œæ–¹æ³•
 		return height/100;
 	}
 	
@@ -43,7 +43,7 @@ class Boy extends Human{
 
 class Girl extends Human{
 	public double getHeight() {
-//		System.out.println(age); ×ÓÀàÎŞ·¨Ê¹ÓÃ¸¸ÀàµÄË½ÓĞÊôĞÔºÍ·½·¨
+//		System.out.println(age); å­ç±»æ— æ³•ä½¿ç”¨çˆ¶ç±»çš„ç§æœ‰å±æ€§å’Œæ–¹æ³•
 		return height*10;
 	}
 	

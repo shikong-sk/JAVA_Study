@@ -17,7 +17,7 @@ public class Human{
 		}
 		else {
 			this.age = 0;
-			System.out.println("ÄêÁä¸ñÊ½²»ºÏ·¨");
+			System.out.println("å¹´é¾„æ ¼å¼ä¸åˆæ³•");
 		}
 	}
 
@@ -28,7 +28,7 @@ public class Human{
 	public void setName(String name) {
 		if(name.length() < 2 || name.length() > 5)
 		{
-			System.out.println("ĞÕÃû³¤¶È²»ºÏ·¨");
+			System.out.println("å§“åé•¿åº¦ä¸åˆæ³•");
 		}
 		else {			
 			this.name = name;
