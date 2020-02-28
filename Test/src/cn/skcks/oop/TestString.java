@@ -6,8 +6,18 @@ public class TestString {
 		String str2 = "abc"; // 自动存入常量池
 		String str3 = new String("abc"); // 独立的不同的对象
 		
-		System.out.println(str1 == str2);
-		System.out.println(str1 == str3); // str1 和 str3 不是同一个对象
+		System.out.println("str1 == str2：" + (str1 == str2));
+		System.out.println("str1 == str3：" + (str1 == str3)); // str1 和 str3 不是同一个对象
+		
+		String str4 = "a" + "b" + "c"; // 编译器优化自动将常量拼接成字符串
+		System.out.println("str1 == str4：" + (str1 == str4));
+		
+		String str5 = "a";
+		String str6 = "b";
+		String str7 = "c";
+		
+		String str8 = str5 + str6 + str7; // 编译器编译时不知道变量中的内容是什么，无法优化 所以新建了一个对象
+		System.out.println("str1 == str8：" + (str1 == str8));
 		
 		System.out.println(str3.equals(str1)); // 通常使用 equals 比较字符串
 		
