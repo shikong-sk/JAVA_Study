@@ -17,7 +17,7 @@ public class TestCalendar {
 		/*
 		 * 获取日期的相关元素
 		 */
-		Calendar calendar = new GregorianCalendar(2020, 1, 28, 23, 59, 00);
+		Calendar calendar = new GregorianCalendar(2020, 2-1, 28, 23, 59, 00);
 
 		System.out.println(calendar);
 
@@ -50,9 +50,11 @@ public class TestCalendar {
 		Calendar calendar3 = new GregorianCalendar();
 		calendar3.add(Calendar.DATE, 100); // 100天后
 		System.out.println(calendar3);
+		System.out.println(printCalendar(calendar3));
 
 		calendar3.add(Calendar.YEAR, -1); // 1年前
 		System.out.println(calendar3);
+		System.out.println(printCalendar(calendar3));
 
 		/*
 		 * 日期对象和时间对象的转换

@@ -5,6 +5,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
 
 /*
  * 时间对象与字符串之间的转换
@@ -37,5 +39,7 @@ public class TestDateFormat {
 		 */
 		DateFormat df2 = new SimpleDateFormat("D"); // 当前日期为当前年份的第几天
 		System.out.println(df2.format(new Date()));
+		
+		System.out.println(df.format(new Date()));
 	}
 }
