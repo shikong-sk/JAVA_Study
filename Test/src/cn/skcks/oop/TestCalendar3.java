@@ -23,7 +23,9 @@ public class TestCalendar3 {
 		
 		System.out.print("请输入日期 (格式 : " + df.format(new Date()) + ") : ");
 		
+		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
+		
 		str = scanner.nextLine();
 		
 		while(!Pattern.matches(regex, str))
