@@ -24,7 +24,6 @@ public class CustomArrayList_4<E> {
         } else if (capacity == 0) {
             elementData = new Object[DEFAULT_CAPACITY];
         } else {
-
             elementData = new Object[capacity];
         }
     }
@@ -74,33 +73,42 @@ public class CustomArrayList_4<E> {
     }
 
     public void remove(E element) {
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < this.size; i++) {
             if (element.equals(get(i))) {
-                if (size - i - 1 > 0) {
-                    System.arraycopy(elementData, i + 1, elementData, i, size - i - 1);
-                }
-                elementData[size--] = null;
+//                if (this.size - i - 1 > 0) {
+//                    System.arraycopy(this.elementData, i + 1, this.elementData, i, this.size - i - 1);
+//                }
+//                this.elementData[this.size--] = null;
+                remove(i);
             }
         }
     }
 
     public void remove(int index) {
+        checkRange(index);
 
+        if (this.size - index - 1 > 0) {
+            System.arraycopy(this.elementData, index + 1, this.elementData, index, this.size - index - 1);
+        }
+        this.elementData[this.size--] = null;
     }
 
+    public boolean isEmpty(){
+        return this.size == 0;
+    }
 
     @Override
     public String toString() {
 
-        if (size == 0) {
+        if (this.size == 0) {
             return "[]";
         }
 
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("[");
 
-        for (int i = 0; i < size; i++) {
-            stringBuilder.append(elementData[i]).append(',');
+        for (int i = 0; i < this.size; i++) {
+            stringBuilder.append(this.elementData[i]).append(',');
         }
 
         stringBuilder.setCharAt(stringBuilder.length() - 1, ']');
@@ -113,12 +121,15 @@ public class CustomArrayList_4<E> {
 
         System.out.println("容器大小：" + list.length());
 
+        System.out.println(list.isEmpty());
+
         for (int i = 0; i < 20; i++) {
             list.add(i);
         }
 
         System.out.println("容器元素个数：" + list.size());
         System.out.println("容器大小：" + list.length());
+        System.out.println(list.isEmpty());
 
         System.out.println(list);
 
@@ -127,6 +138,9 @@ public class CustomArrayList_4<E> {
         System.out.println(list);
 
         list.remove("A");
+        System.out.println(list);
+
+        list.remove(19-1);
         System.out.println(list);
     }
 
