@@ -5,6 +5,8 @@ import java.util.Map;
 
 /*
     HashMap
+    线程不安全,效率高
+    key 或 value 允许为空
  */
 public class TestMap {
     public static void main(String[] args) {
