@@ -1,6 +1,8 @@
 package cn.skcks.myCollection;
 
-import java.util.LinkedList;
+/*
+    自定义链表节点
+ */
 
 public class CustomNode{
 
