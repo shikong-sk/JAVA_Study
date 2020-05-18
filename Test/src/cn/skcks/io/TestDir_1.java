@@ -21,17 +21,23 @@ public class TestDir_1 {
         // 批量创建文件
         for(int i=0;i<5;i++){
             try {
-                System.out.println("创建文件 tmpFile_" + i + "：" + new File(dirs,"tmpFile_" + String.valueOf(i)).createNewFile());
+                System.out.println("创建文件 tmpFile_" + i + "：" + new File(dirs,"tmpFile_" + i).createNewFile());
             }catch (Exception e){
                 e.printStackTrace();
             }
         }
 
+        System.out.println("========================================");
+
         // 列出下级名称
         System.out.println(Arrays.deepToString(dirs.list()));
 
+        System.out.println("========================================");
+
         // 列出下级对象
         System.out.println(Arrays.deepToString(dirs.listFiles()));
+
+        System.out.println("========================================");
 
         // 列出所有盘符
         System.out.println(Arrays.toString(File.listRoots()));
