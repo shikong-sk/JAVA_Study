@@ -3,7 +3,7 @@ package cn.skcks.oop;
 public class ImplementsInterface implements TestInterface {
 	public void getAge() {
 		// TODO Auto-generated method stub
-		System.out.println("MAX_AGE µÄÖµÎª£º" + MAX_AGE);
+		System.out.println("MAX_AGE çš„å€¼ä¸ºï¼š" + MAX_AGE);
 	}
 	
 	public static void main(String[] args) {
