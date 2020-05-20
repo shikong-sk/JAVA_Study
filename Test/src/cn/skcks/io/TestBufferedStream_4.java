@@ -1,13 +1,14 @@
 package cn.skcks.io;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 /*
     IO 文件流
     文件字符 输入、输出流
+    加入 字符输入、输出缓冲流
+    改进 逐行读取
  */
-public class TestStream_4 {
+public class TestBufferedStream_4 {
     public static void main(String[] args) throws IOException {
 
         long sTime;
@@ -20,22 +21,20 @@ public class TestStream_4 {
             System.out.println(dir.mkdirs() ? "文件夹创建成功" : "");
         }
 
-        File file = new File(dir, "TestStream_4");
+        File file = new File(dir, "TestBufferedStream_3");
 
         // 自动资源管理 - 自动释放资源
         // 字符输出流
-        try (FileWriter fileWriter = new FileWriter(file) ) {
+        // 逐行写入
+        try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter(file)) ) {
 
             System.out.println("=====  写入文件内容  =====");
 
             sTime = System.currentTimeMillis();
 
-            String str = "时空旅行者\r\n123 Abc";
-
-            System.out.println(str);
-
-//            fileWriter.write(str);
-            fileWriter.write(str,0,str.length());
+            fileWriter.write("时空旅行者");
+            fileWriter.newLine();
+            fileWriter.write("123 Abc");
 
             fileWriter.flush();
 
@@ -49,19 +48,17 @@ public class TestStream_4 {
 
         // 自动资源管理 - 自动释放资源
         // 字符输入流
-        try (FileReader fileReader = new FileReader(file) ) {
+        // 逐行读取
+        try (BufferedReader fileReader = new BufferedReader(new FileReader(file)) ) {
 
             System.out.println("=====  读取文件内容  =====");
 
             sTime = System.currentTimeMillis();
 
-            char[] flush = new char[1024 / 2];
-            int len;
-            while((len = fileReader.read(flush)) != -1)
+            String line;
+            while((line = fileReader.readLine()) != null)
             {
-                String str = new String(flush,0,len);
-
-                System.out.println(str);
+                System.out.println(line);
             }
 
             eTime = System.currentTimeMillis();
