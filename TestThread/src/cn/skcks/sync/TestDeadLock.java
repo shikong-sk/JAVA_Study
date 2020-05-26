@@ -1,8 +1,5 @@
 package cn.skcks.sync;
 
-import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
-
 /*
     死锁：过多的同步导致互相占用不释放资源
     从而互相等待，一般发生于同步中持有多个对象的锁
