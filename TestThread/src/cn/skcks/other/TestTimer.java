@@ -12,7 +12,7 @@ public class TestTimer {
         Timer timer = new Timer();
 //        timer.schedule(new Task(),500);     // 只执行一次
 //        timer.schedule(new Task(),500,1000);     // 每 1000ms 执行一次
-        
+
         //  到达指定时间后,每 1000ms 执行一次
         timer.schedule(new Task(), new GregorianCalendar(2020, Calendar.MAY, 27, 2, 59, 30).getTime(), 1000);
     }
