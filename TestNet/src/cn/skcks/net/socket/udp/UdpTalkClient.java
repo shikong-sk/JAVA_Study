@@ -23,7 +23,8 @@ public class UdpTalkClient {
         try {
 
             // 创建 datagramSocket
-            DatagramSocket datagramSocket = new DatagramSocket(5666);
+//            DatagramSocket datagramSocket = new DatagramSocket(5666);
+            DatagramSocket datagramSocket = new DatagramSocket((int) (Math.random() * (5670 - 5666)) + 5666);
 
             // 要发送的数据
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
