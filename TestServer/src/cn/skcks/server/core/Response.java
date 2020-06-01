@@ -1,11 +1,10 @@
-package cn.skcks.server;
+package cn.skcks.server.core;
 
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Date;
 
 /*

@@ -1,4 +1,4 @@
-package cn.skcks.server;
+package cn.skcks.server.core;
 
 import java.io.IOException;
 import java.io.InputStream;
