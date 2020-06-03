@@ -1,0 +1,50 @@
+package cn.skcks.javassist;
+
+import javassist.*;
+
+import java.io.File;
+
+/*
+	使用 javassist 生成一个新的类
+ */
+public class Javassist {
+	public static void main(String[] args) {
+		// 类池
+		ClassPool classPool = ClassPool.getDefault();
+		// 要创建的类
+		CtClass userClass =  classPool.makeClass("cn.skcks.javassist.User");
+
+		// 创建属性(类成员)
+		try {
+			CtField idField = CtField.make("private int id;",userClass);
+			CtField nameField = CtField.make("private String name;",userClass);
+			userClass.addField(idField);
+			userClass.addField(nameField);
+
+			// 创建方法
+			CtMethod getName = CtMethod.make("public String getName(){return name;}",userClass);
+			CtMethod setName = CtMethod.make("public void setName(String name){this.name = name;}",userClass);
+			CtMethod getId = CtMethod.make("public int getId(){return id;}",userClass);
+			CtMethod setId = CtMethod.make("public void setId(int id){this.id = id;}",userClass);
+			userClass.addMethod(getName);
+			userClass.addMethod(setName);
+			userClass.addMethod(getId);
+			userClass.addMethod(setId);
+
+			// 创建构造器
+			CtConstructor emptyConstructor = new CtConstructor(new CtClass[]{},userClass);
+			CtConstructor userConstructor = new CtConstructor(new CtClass[]{CtClass.intType, classPool.get("java.lang.String")},userClass);
+			// setBody 中的传参 $0 => this,$1 => 参数1,$2 => 参数 2
+			userConstructor.setBody("{this.id = $1;this.name = $2;}");
+			userClass.addConstructor(emptyConstructor);
+			userClass.addConstructor(userConstructor);
+
+			// 将生成的类写入指定的工作空间内
+			String path = System.getProperty("user.dir")  + File.separator + "src" + File.separator + "cn" + File.separator + "skcks" + File.separator + "javassist";
+			userClass.writeFile(path);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
