@@ -23,6 +23,7 @@ public class TestDate {
 		
 		// 日期处理推荐使用 Canlendar 日期类
 		// 被废弃的方法
+		@SuppressWarnings("deprecation")
 		Date date3 = new Date(2020-1900,02-1,28); // 2020.02.28
 		System.out.println(date3);
 	}

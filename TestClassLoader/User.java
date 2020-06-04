@@ -1,21 +1,16 @@
-package cn.skcks.javassist.bean;
+package cn.skcks.classLoader.bean;
 
-import cn.skcks.javassist.annotation.Author;
-
-import java.io.Serializable;
-
-@Author(name = "时空",year = 2020)
-public class User implements Serializable {
+public class User {
 	private String id;
 	private String name;
 
-	public String say(String who){
+	public String say(String who) {
 		System.out.println(who + "：Hello World!");
 		return "返回值 => " + who + "：Hello World!";
 	}
 
 	public String getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(String id) {
@@ -23,7 +18,7 @@ public class User implements Serializable {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {

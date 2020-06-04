@@ -6,6 +6,13 @@ import java.io.File;
 
 /*
 	使用 javassist 生成一个新的类
+
+	不支持 JDK 5.0 以后的新语法
+	例：泛型 枚举 注解修改 等
+	不支持 数组的初始化
+	不支持 内部类 和 匿名类
+	不支持 continue break 表达式
+	不支持 多级继承关系
  */
 public class Javassist {
 	public static void main(String[] args) {
