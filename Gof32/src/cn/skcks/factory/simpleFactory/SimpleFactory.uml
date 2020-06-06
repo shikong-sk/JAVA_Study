@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>cn.skcks.factory.simple.interfacePackage.Car</OriginalElement>
+  <nodes>
+    <node x="272.4166666666667" y="0.0">cn.skcks.factory.simple.interfacePackage.Car</node>
+    <node x="393.5" y="259.5">cn.skcks.factory.simple.TestNoFactory</node>
+    <node x="344.739880952381" y="114.0">cn.skcks.factory.simple.classPackage.Byd</node>
+    <node x="220.53571428571428" y="375.0">cn.skcks.factory.simple.Test</node>
+    <node x="40.79583333333335" y="114.0">cn.skcks.factory.simple.classPackage.Audi</node>
+    <node x="202.5" y="248.0">cn.skcks.factory.simple.TestSimpleFactory_2</node>
+    <node x="10.5" y="259.5">cn.skcks.factory.simple.TestSimpleFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cn.skcks.factory.simple.Test" target="cn.skcks.factory.simple.TestSimpleFactory_2">
+      <point x="0.0" y="-27.0" />
+      <point x="299.5357142857143" y="355.0" />
+      <point x="287.5" y="355.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestSimpleFactory" target="cn.skcks.factory.simple.classPackage.Audi">
+      <point x="0.0" y="-27.0" />
+      <point x="96.5" y="228.0" />
+      <point x="80.54583333333335" y="228.0" />
+      <point x="-13.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.classPackage.Byd" target="cn.skcks.factory.simple.interfacePackage.Car">
+      <point x="0.0" y="-27.0" />
+      <point x="397.739880952381" y="94.0" />
+      <point x="334.25" y="94.0" />
+      <point x="8.833333333333314" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestSimpleFactory" target="cn.skcks.factory.simple.classPackage.Byd">
+      <point x="57.333333333333314" y="-27.0" />
+      <point x="153.83333333333331" y="208.0" />
+      <point x="357.989880952381" y="208.0" />
+      <point x="-39.75" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestSimpleFactory_2" target="cn.skcks.factory.simple.classPackage.Byd">
+      <point x="56.66666666666666" y="-38.5" />
+      <point x="344.1666666666667" y="218.0" />
+      <point x="384.489880952381" y="218.0" />
+      <point x="-13.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.classPackage.Audi" target="cn.skcks.factory.simple.interfacePackage.Car">
+      <point x="0.0" y="-27.0" />
+      <point x="93.79583333333335" y="84.0" />
+      <point x="298.9166666666667" y="84.0" />
+      <point x="-26.5" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestSimpleFactory" target="cn.skcks.factory.simple.interfacePackage.Car">
+      <point x="-57.33333333333337" y="-27.0" />
+      <point x="39.16666666666663" y="218.0" />
+      <point x="30.29583333333335" y="218.0" />
+      <point x="30.29583333333335" y="74.0" />
+      <point x="281.25" y="74.0" />
+      <point x="-44.166666666666686" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestNoFactory" target="cn.skcks.factory.simple.classPackage.Audi">
+      <point x="-52.66666666666663" y="-27.0" />
+      <point x="419.83333333333337" y="188.0" />
+      <point x="133.54583333333335" y="188.0" />
+      <point x="39.75" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.Test" target="cn.skcks.factory.simple.classPackage.Audi">
+      <point x="-63.19999999999999" y="-27.0" />
+      <point x="236.3357142857143" y="355.0" />
+      <point x="0.0" y="355.0" />
+      <point x="0.0" y="228.0" />
+      <point x="54.04583333333335" y="228.0" />
+      <point x="-39.75" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.Test" target="cn.skcks.factory.simple.TestSimpleFactory">
+      <point x="-31.599999999999966" y="-27.0" />
+      <point x="267.9357142857143" y="345.0" />
+      <point x="96.5" y="345.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestNoFactory" target="cn.skcks.factory.simple.classPackage.Byd">
+      <point x="0.0" y="-27.0" />
+      <point x="472.5" y="228.0" />
+      <point x="437.489880952381" y="228.0" />
+      <point x="39.75" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.Test" target="cn.skcks.factory.simple.classPackage.Byd">
+      <point x="31.600000000000023" y="-27.0" />
+      <point x="331.1357142857143" y="345.0" />
+      <point x="383.0" y="345.0" />
+      <point x="383.0" y="228.0" />
+      <point x="410.989880952381" y="228.0" />
+      <point x="13.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestSimpleFactory_2" target="cn.skcks.factory.simple.classPackage.Audi">
+      <point x="-56.66666666666666" y="-38.5" />
+      <point x="230.83333333333337" y="198.0" />
+      <point x="107.04583333333335" y="198.0" />
+      <point x="13.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestNoFactory" target="cn.skcks.factory.simple.interfacePackage.Car">
+      <point x="52.66666666666663" y="-27.0" />
+      <point x="525.1666666666666" y="228.0" />
+      <point x="522.1291666666666" y="228.0" />
+      <point x="522.1291666666666" y="84.0" />
+      <point x="351.9166666666667" y="84.0" />
+      <point x="26.5" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.TestSimpleFactory_2" target="cn.skcks.factory.simple.interfacePackage.Car">
+      <point x="0.0" y="-38.5" />
+      <point x="287.5" y="198.0" />
+      <point x="284.2916666666667" y="198.0" />
+      <point x="284.2916666666667" y="94.0" />
+      <point x="316.58333333333337" y="94.0" />
+      <point x="-8.833333333333314" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.factory.simple.Test" target="cn.skcks.factory.simple.interfacePackage.Car">
+      <point x="63.19999999999999" y="-27.0" />
+      <point x="362.73571428571427" y="355.0" />
+      <point x="562.0" y="355.0" />
+      <point x="562.0" y="74.0" />
+      <point x="369.58333333333337" y="74.0" />
+      <point x="44.166666666666686" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="350.6538461538462" y="206.8717948717949" />
+  <SelectedNodes>
+    <node>cn.skcks.factory.simple.TestSimpleFactory_2</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

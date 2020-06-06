@@ -1,11 +1,13 @@
 package cn.skcks.singleton;
 
+import java.io.Serializable;
+
 /*
 	单例模式
 
 	懒汉式
  */
-public class TestSingleton_2 {
+public class TestSingleton_2 implements Serializable {
 	// 类初始化时 不初始化
 	private static TestSingleton_2 instance;
 
