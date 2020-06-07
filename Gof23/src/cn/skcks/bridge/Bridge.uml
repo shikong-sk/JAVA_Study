@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>cn.skcks.bridge.TestBridge</OriginalElement>
+  <nodes>
+    <node x="0.0" y="167.0">cn.skcks.bridge.classPackage.Dell</node>
+    <node x="129.0" y="167.0">cn.skcks.bridge.classPackage.Hasee</node>
+    <node x="351.40048363095235" y="334.0">cn.skcks.bridge.classPackage.category.PadBridge</node>
+    <node x="348.21000744047615" y="491.0">cn.skcks.bridge.TestBridge</node>
+    <node x="525.4004836309523" y="334.0">cn.skcks.bridge.classPackage.category.LaptopBridge</node>
+    <node x="425.73381696428567" y="0.0">cn.skcks.bridge.interfacePackage.Brand</node>
+    <node x="579.4004836309523" y="124.0">cn.skcks.bridge.classPackage.Computer</node>
+    <node x="258.0" y="167.0">cn.skcks.bridge.classPackage.Lenovo</node>
+    <node x="720.4004836309523" y="334.0">cn.skcks.bridge.classPackage.category.DesktopBridge</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cn.skcks.bridge.TestBridge" target="cn.skcks.bridge.classPackage.Computer">
+      <point x="45.14285714285717" y="-27.0" />
+      <point x="472.35286458333337" y="461.0" />
+      <point x="709.9004836309523" y="461.0" />
+      <point x="709.9004836309523" y="314.0" />
+      <point x="677.7576264880952" y="314.0" />
+      <point x="21.857142857142776" y="70.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.Computer" target="cn.skcks.bridge.interfacePackage.Brand">
+      <point x="-38.25" y="-70.0" />
+      <point x="617.6504836309523" y="94.0" />
+      <point x="500.6713169642857" y="94.0" />
+      <point x="20.437500000000057" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.TestBridge" target="cn.skcks.bridge.classPackage.category.PadBridge">
+      <point x="0.0" y="-27.0" />
+      <point x="427.21000744047615" y="471.0" />
+      <point x="428.40048363095235" y="471.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="cn.skcks.bridge.TestBridge" target="cn.skcks.bridge.classPackage.Dell">
+      <point x="-67.71428571428567" y="-27.0" />
+      <point x="359.4957217261905" y="471.0" />
+      <point x="54.5" y="471.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.Hasee" target="cn.skcks.bridge.interfacePackage.Brand">
+      <point x="0.0" y="-27.0" />
+      <point x="183.5" y="84.0" />
+      <point x="446.17131696428567" y="84.0" />
+      <point x="-34.0625" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.LaptopBridge" target="cn.skcks.bridge.interfacePackage.Brand">
+      <point x="-58.0" y="-48.5" />
+      <point x="554.4004836309523" y="284.0" />
+      <point x="568.9004836309523" y="284.0" />
+      <point x="568.9004836309523" y="104.0" />
+      <point x="487.04631696428567" y="104.0" />
+      <point x="6.8125" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.TestBridge" target="cn.skcks.bridge.classPackage.Lenovo">
+      <point x="-22.571428571428555" y="-27.0" />
+      <point x="404.6385788690476" y="451.0" />
+      <point x="312.5" y="451.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.TestBridge" target="cn.skcks.bridge.classPackage.category.LaptopBridge">
+      <point x="22.571428571428555" y="-27.0" />
+      <point x="449.7814360119047" y="451.0" />
+      <point x="612.4004836309523" y="451.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.Lenovo" target="cn.skcks.bridge.interfacePackage.Brand">
+      <point x="0.0" y="-27.0" />
+      <point x="312.5" y="94.0" />
+      <point x="459.79631696428567" y="94.0" />
+      <point x="-20.4375" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.DesktopBridge" target="cn.skcks.bridge.classPackage.Computer">
+      <point x="0.0" y="-48.5" />
+      <point x="810.9004836309523" y="294.0" />
+      <point x="721.471912202381" y="294.0" />
+      <point x="65.57142857142856" y="70.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.Dell" target="cn.skcks.bridge.interfacePackage.Brand">
+      <point x="0.0" y="-27.0" />
+      <point x="54.5" y="74.0" />
+      <point x="432.54631696428567" y="74.0" />
+      <point x="-47.6875" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.DesktopBridge" target="cn.skcks.bridge.interfacePackage.Brand">
+      <point x="60.33333333333337" y="-48.5" />
+      <point x="871.2338169642858" y="284.0" />
+      <point x="810.5440848214287" y="284.0" />
+      <point x="810.5440848214287" y="74.0" />
+      <point x="527.9213169642858" y="74.0" />
+      <point x="47.68750000000006" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.PadBridge" target="cn.skcks.bridge.interfacePackage.Brand">
+      <point x="-51.33333333333337" y="-48.5" />
+      <point x="377.067150297619" y="284.0" />
+      <point x="426.56640624999994" y="284.0" />
+      <point x="426.56640624999994" y="104.0" />
+      <point x="473.42131696428567" y="104.0" />
+      <point x="-6.8125" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.LaptopBridge" target="cn.skcks.bridge.classPackage.Computer">
+      <point x="58.0" y="-48.5" />
+      <point x="670.4004836309523" y="314.0" />
+      <point x="655.9004836309523" y="314.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.TestBridge" target="cn.skcks.bridge.classPackage.Hasee">
+      <point x="-45.14285714285711" y="-27.0" />
+      <point x="382.06715029761904" y="461.0" />
+      <point x="183.5" y="461.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.TestBridge" target="cn.skcks.bridge.classPackage.category.DesktopBridge">
+      <point x="67.71428571428572" y="-27.0" />
+      <point x="494.9242931547619" y="471.0" />
+      <point x="810.9004836309523" y="471.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.PadBridge" target="cn.skcks.bridge.classPackage.Computer">
+      <point x="51.33333333333337" y="-48.5" />
+      <point x="479.7338169642857" y="304.0" />
+      <point x="612.1861979166665" y="304.0" />
+      <point x="-43.71428571428578" y="70.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="451.0" y="272.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

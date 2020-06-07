@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>cn.skcks.bridge.classPackage.HaseeDesktop</OriginalElement>
+  <nodes>
+    <node x="0.0" y="208.0">cn.skcks.bridge.classPackage.LenovoLaptop</node>
+    <node x="284.00000000000006" y="208.0">cn.skcks.bridge.classPackage.LenovoDesktop</node>
+    <node x="376.5972222222223" y="104.0">cn.skcks.bridge.classPackage.category.Desktop</node>
+    <node x="145.00000000000006" y="208.0">cn.skcks.bridge.classPackage.HaseeLaptop</node>
+    <node x="581.0" y="208.0">cn.skcks.bridge.classPackage.LenovoPad</node>
+    <node x="369.75000000000006" y="0.0">cn.skcks.bridge.interfacePackage.Computer</node>
+    <node x="581.0" y="104.0">cn.skcks.bridge.classPackage.category.Pad</node>
+    <node x="85.84722222222229" y="104.0">cn.skcks.bridge.classPackage.category.Laptop</node>
+    <node x="436.00000000000006" y="208.0">cn.skcks.bridge.classPackage.HaseeDesktop</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cn.skcks.bridge.classPackage.LenovoLaptop" target="cn.skcks.bridge.classPackage.category.Laptop">
+      <point x="0.0" y="-27.0" />
+      <point x="62.5" y="183.0" />
+      <point x="113.09722222222229" y="183.0" />
+      <point x="-27.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.Desktop" target="cn.skcks.bridge.interfacePackage.Computer">
+      <point x="0.0" y="-27.0" />
+      <point x="431.0972222222223" y="79.0" />
+      <point x="424.25000000000006" y="79.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.Pad" target="cn.skcks.bridge.interfacePackage.Computer">
+      <point x="0.0" y="-27.0" />
+      <point x="635.5" y="79.0" />
+      <point x="460.5833333333334" y="79.0" />
+      <point x="36.33333333333337" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.category.Laptop" target="cn.skcks.bridge.interfacePackage.Computer">
+      <point x="-2.8421709430404007E-14" y="-27.0" />
+      <point x="140.34722222222226" y="79.0" />
+      <point x="387.9166666666667" y="79.0" />
+      <point x="-36.33333333333334" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.LenovoPad" target="cn.skcks.bridge.classPackage.category.Pad">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.LenovoDesktop" target="cn.skcks.bridge.classPackage.category.Desktop">
+      <point x="0.0" y="-27.0" />
+      <point x="350.00000000000006" y="183.0" />
+      <point x="403.8472222222223" y="183.0" />
+      <point x="-27.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.HaseeDesktop" target="cn.skcks.bridge.classPackage.category.Desktop">
+      <point x="0.0" y="-27.0" />
+      <point x="498.50000000000006" y="183.0" />
+      <point x="458.3472222222223" y="183.0" />
+      <point x="27.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.bridge.classPackage.HaseeLaptop" target="cn.skcks.bridge.classPackage.category.Laptop">
+      <point x="0.0" y="-27.0" />
+      <point x="204.50000000000006" y="183.0" />
+      <point x="167.59722222222226" y="183.0" />
+      <point x="27.24999999999997" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="345.0" y="131.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
