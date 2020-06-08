@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="136.64423076923077" y="0.0">cn.skcks.flyWeight.classPackage.Coordinate</node>
+    <node x="71.2996794871795" y="550.0">cn.skcks.flyWeight.classPackage.ChessFlyWeightFactory</node>
+    <node x="192.61378205128204" y="697.0">cn.skcks.flyWeight.TestFlyWeight</node>
+    <node x="0.0" y="317.0">cn.skcks.flyWeight.classPackage.ConcreteChess</node>
+    <node x="121.24038461538461" y="170.0">cn.skcks.flyWeight.interfacePackage.Chess</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cn.skcks.flyWeight.classPackage.ChessFlyWeightFactory" target="cn.skcks.flyWeight.classPackage.ConcreteChess">
+      <point x="-66.0" y="-48.5" />
+      <point x="104.2996794871795" y="525.0" />
+      <point x="96.5" y="525.0" />
+      <point x="0.0" y="91.5" />
+    </edge>
+    <edge source="cn.skcks.flyWeight.classPackage.ChessFlyWeightFactory" target="cn.skcks.flyWeight.interfacePackage.Chess">
+      <point x="0.0" y="-48.5" />
+      <point x="170.2996794871795" y="525.0" />
+      <point x="203.5" y="525.0" />
+      <point x="203.5" y="292.0" />
+      <point x="193.6153846153846" y="292.0" />
+      <point x="-24.125" y="48.5" />
+    </edge>
+    <edge source="cn.skcks.flyWeight.TestFlyWeight" target="cn.skcks.flyWeight.classPackage.Coordinate">
+      <point x="52.66666666666668" y="-27.0" />
+      <point x="324.74038461538464" y="145.0" />
+      <point x="272.4775641025641" y="145.0" />
+      <point x="54.333333333333314" y="60.0" />
+    </edge>
+    <edge source="cn.skcks.flyWeight.TestFlyWeight" target="cn.skcks.flyWeight.interfacePackage.Chess">
+      <point x="0.0" y="-27.0" />
+      <point x="271.61378205128204" y="672.0" />
+      <point x="292.4471153846154" y="672.0" />
+      <point x="292.4471153846154" y="292.0" />
+      <point x="290.11538461538464" y="292.0" />
+      <point x="72.375" y="48.5" />
+    </edge>
+    <edge source="cn.skcks.flyWeight.interfacePackage.Chess" target="cn.skcks.flyWeight.classPackage.Coordinate">
+      <point x="0.0" y="-48.5" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="cn.skcks.flyWeight.classPackage.ConcreteChess" target="cn.skcks.flyWeight.interfacePackage.Chess">
+      <point x="48.25" y="-91.5" />
+      <point x="-72.375" y="48.5" />
+    </edge>
+    <edge source="cn.skcks.flyWeight.TestFlyWeight" target="cn.skcks.flyWeight.classPackage.ChessFlyWeightFactory">
+      <point x="-52.66666666666666" y="-27.0" />
+      <point x="218.9471153846154" y="672.0" />
+      <point x="170.2996794871795" y="672.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="cn.skcks.flyWeight.classPackage.ConcreteChess" target="cn.skcks.flyWeight.classPackage.Coordinate">
+      <point x="-48.25" y="-91.5" />
+      <point x="48.25" y="145.0" />
+      <point x="163.81089743589746" y="145.0" />
+      <point x="-54.33333333333334" y="60.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7146562905317769" x="175.5" y="375.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

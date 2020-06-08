@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>cn.skcks.decorator.classPackage.AICar</OriginalElement>
+  <nodes>
+    <node x="391.0" y="294.0">cn.skcks.decorator.classPackage.AICar</node>
+    <node x="205.0" y="294.0">cn.skcks.decorator.classPackage.FlyCar</node>
+    <node x="313.25" y="0.0">cn.skcks.decorator.interfacePackage.CarInterface</node>
+    <node x="192.0" y="104.0">cn.skcks.decorator.classPackage.SupperCar</node>
+    <node x="0.0" y="294.0">cn.skcks.decorator.classPackage.WaterCar</node>
+    <node x="404.0" y="147.0">cn.skcks.decorator.classPackage.Car</node>
+    <node x="0.0" y="459.0">cn.skcks.decorator.TestDecorator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cn.skcks.decorator.classPackage.AICar" target="cn.skcks.decorator.classPackage.SupperCar">
+      <point x="0.0" y="-60.0" />
+      <point x="472.0" y="269.0" />
+      <point x="352.0" y="269.0" />
+      <point x="64.0" y="70.0" />
+    </edge>
+    <edge source="cn.skcks.decorator.classPackage.WaterCar" target="cn.skcks.decorator.classPackage.SupperCar">
+      <point x="0.0" y="-60.0" />
+      <point x="92.5" y="269.0" />
+      <point x="224.0" y="269.0" />
+      <point x="-64.0" y="70.0" />
+    </edge>
+    <edge source="cn.skcks.decorator.classPackage.Car" target="cn.skcks.decorator.interfacePackage.CarInterface">
+      <point x="0.0" y="-27.0" />
+      <point x="463.5" y="79.0" />
+      <point x="407.0" y="79.0" />
+      <point x="31.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.decorator.classPackage.SupperCar" target="cn.skcks.decorator.interfacePackage.CarInterface">
+      <point x="0.0" y="-70.0" />
+      <point x="288.0" y="79.0" />
+      <point x="344.5" y="79.0" />
+      <point x="-31.25" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.decorator.classPackage.FlyCar" target="cn.skcks.decorator.classPackage.SupperCar">
+      <point x="0.0" y="-60.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9214046822742475" x="346.0" y="289.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

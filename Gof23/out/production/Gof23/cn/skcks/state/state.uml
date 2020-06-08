@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>cn.skcks.state.classPackage.UsedState</OriginalElement>
+  <nodes>
+    <node x="424.0" y="125.5">cn.skcks.state.classPackage.FreeState</node>
+    <node x="150.99999999999997" y="251.0">cn.skcks.state.TestState</node>
+    <node x="145.99999999999997" y="104.0">cn.skcks.state.classPackage.Context</node>
+    <node x="166.99999999999997" y="0.0">cn.skcks.state.interfacePackage.State</node>
+    <node x="278.0" y="125.5">cn.skcks.state.classPackage.BookedState</node>
+    <node x="0.0" y="125.5">cn.skcks.state.classPackage.UsedState</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cn.skcks.state.classPackage.Context" target="cn.skcks.state.interfacePackage.State">
+      <point x="28.0" y="-48.5" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.state.classPackage.BookedState" target="cn.skcks.state.interfacePackage.State">
+      <point x="0.0" y="-27.0" />
+      <point x="341.0" y="84.0" />
+      <point x="255.20000000000002" y="84.0" />
+      <point x="25.200000000000045" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.state.TestState" target="cn.skcks.state.classPackage.BookedState">
+      <point x="31.600000000000023" y="-27.0" />
+      <point x="261.6" y="221.0" />
+      <point x="341.0" y="221.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.state.TestState" target="cn.skcks.state.classPackage.UsedState">
+      <point x="-63.19999999999999" y="-27.0" />
+      <point x="166.79999999999998" y="231.0" />
+      <point x="63.0" y="231.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.state.classPackage.UsedState" target="cn.skcks.state.interfacePackage.State">
+      <point x="0.0" y="-27.0" />
+      <point x="63.0" y="74.0" />
+      <point x="179.6" y="74.0" />
+      <point x="-50.39999999999998" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.state.TestState" target="cn.skcks.state.classPackage.Context">
+      <point x="0.0" y="-27.0" />
+      <point x="28.0" y="48.5" />
+    </edge>
+    <edge source="cn.skcks.state.TestState" target="cn.skcks.state.classPackage.FreeState">
+      <point x="63.19999999999999" y="-27.0" />
+      <point x="293.19999999999993" y="231.0" />
+      <point x="487.0" y="231.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="cn.skcks.state.classPackage.FreeState" target="cn.skcks.state.interfacePackage.State">
+      <point x="0.0" y="-27.0" />
+      <point x="487.0" y="74.0" />
+      <point x="280.4" y="74.0" />
+      <point x="50.400000000000034" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="275.0" y="152.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
