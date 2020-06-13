@@ -44,4 +44,9 @@ public class JavaFieldGetSet {
 
 	public JavaFieldGetSet() {
 	}
+
+	@Override
+	public String toString() {
+		return getFieldInfo() + getGetFieldInfo() + getSetFieldInfo();
+	}
 }

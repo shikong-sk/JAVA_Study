@@ -25,9 +25,15 @@ public class DbManager {
 			config.setPassword(properties.getProperty("Password"));
 			config.setDatabase(properties.getProperty("Database"));
 
+			config.setGeneratePackage(properties.getProperty("GeneratePackage"));
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static Configuration getConfig() {
+		return config;
 	}
 
 	public static Connection getConnection() {

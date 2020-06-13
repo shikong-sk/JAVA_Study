@@ -19,6 +19,9 @@ public class Configuration {
 	// 数据库
 	private String database;
 
+	// 要生成的包名
+	private String generatePackage;
+
 	public String getDriver() {
 		return driver;
 	}
@@ -26,12 +29,21 @@ public class Configuration {
 	public Configuration() {
 	}
 
-	public Configuration(String driver, String url, String user, String password, String database) {
+	public Configuration(String driver, String url, String user, String password, String database, String generatePackage) {
 		this.driver = driver;
 		this.url = url;
 		this.user = user;
 		this.password = password;
 		this.database = database;
+		this.generatePackage = generatePackage;
+	}
+
+	public String getGeneratePackage() {
+		return generatePackage;
+	}
+
+	public void setGeneratePackage(String generatePackage) {
+		this.generatePackage = generatePackage;
 	}
 
 	public void setDriver(String driver) {

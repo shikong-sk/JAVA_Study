@@ -15,7 +15,7 @@ import java.util.Map;
  */
 public class TableManager {
 
-	private static Map<String, TableInfo> tables = new HashMap<>();
+	public static Map<String, TableInfo> tables = new HashMap<>();
 
 	public static Map<Class<?>, ColumnInfo> tableMap = new HashMap<>();
 
