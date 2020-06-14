@@ -11,12 +11,12 @@ public interface Query {
 	 */
 	int executeDML(String sql, Object[] params);
 
-	void insert(Object object);
+	int insert(Object object);
 
 	// 根据对应的表对象 指定的主键 删除
 	int delete(Class<?> clz,Object object);
 
-	void delete(Object object);
+	int delete(Object object);
 
 	int update(Object object,String[] fields);
 

@@ -22,6 +22,9 @@ public class Configuration {
 	// 要生成的包名
 	private String generatePackage;
 
+	// 项目所使用的查询类
+	private String queryClass;
+
 	public String getDriver() {
 		return driver;
 	}
@@ -29,13 +32,22 @@ public class Configuration {
 	public Configuration() {
 	}
 
-	public Configuration(String driver, String url, String user, String password, String database, String generatePackage) {
+	public Configuration(String driver, String url, String user, String password, String database, String generatePackage, String queryClass) {
 		this.driver = driver;
 		this.url = url;
 		this.user = user;
 		this.password = password;
 		this.database = database;
 		this.generatePackage = generatePackage;
+		this.queryClass = queryClass;
+	}
+
+	public String getQueryClass() {
+		return queryClass;
+	}
+
+	public void setQueryClass(String queryClass) {
+		this.queryClass = queryClass;
 	}
 
 	public String getGeneratePackage() {

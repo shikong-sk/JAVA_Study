@@ -26,7 +26,7 @@ public class DbManager {
 			config.setDatabase(properties.getProperty("Database"));
 
 			config.setGeneratePackage(properties.getProperty("GeneratePackage"));
-
+			config.setQueryClass(properties.getProperty("QueryClass"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

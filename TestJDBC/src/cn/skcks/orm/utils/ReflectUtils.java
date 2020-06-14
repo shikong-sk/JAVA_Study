@@ -33,7 +33,7 @@ public class ReflectUtils {
 			}
 
 			// 通过反射 调用属性的 get 方法
-			Method method = object.getClass().getMethod("get" + StringUtils.firstChar2UpperCase(fieldName));
+			Method method = object.getClass().getDeclaredMethod("get" + StringUtils.firstChar2UpperCase(fieldName));
 
 			// 实际执行的 类对象为 object
 			return method.invoke(object);
@@ -44,18 +44,14 @@ public class ReflectUtils {
 		}
 	}
 
-//	public static Object invokeSet(Object object,String fieldName) {
-//		Class<?> clz = object.getClass();
-//		TableInfo tableInfo = TableManager.tableMap.get(clz);
-//		ColumnInfo primaryKey = tableInfo.getPrimaryKey();
-//		try {
-//			// 通过反射 调用属性的 get 方法
-//			Method method = clz.getMethod("set" + StringUtils.firstChar2UpperCase(fieldName));
-//			return method.invoke(clz);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//
-//			return null;
-//		}
-//	}
+	public static void invokeSet(Object object, String fieldName, Object columnValue) {
+		try {
+			Method method = object.getClass()
+					.getDeclaredMethod("set" + StringUtils.firstChar2UpperCase(fieldName), columnValue.getClass());
+
+			method.invoke(object, columnValue);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
