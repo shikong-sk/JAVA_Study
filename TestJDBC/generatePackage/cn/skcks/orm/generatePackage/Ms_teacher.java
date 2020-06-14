@@ -3,28 +3,23 @@ package cn.skcks.orm.generatePackage;
 import java.sql.*;
 import java.util.*;
 
-public class Ms_student {
+public class Ms_teacher {
 
 	private String departmentName;
 	private String salt;
-	private String majorId;
 	private String address;
+	private String teacherName;
 	private String gender;
 	private String idCard;
 	private String departmentId;
 	private Integer active;
-	private String years;
+	private String permission;
 	private java.sql.Date both;
-	private String studentId;
-	private String seat;
 	private String password;
-	private String classId;
-	private String studentName;
+	private String teacherId;
 	private String contact;
-	private String grade;
-	private String majorName;
-	private String _Class;
-	private String studentImg;
+	private String email;
+	private String teacherImg;
 
 	public String getDepartmentName(){
 		return departmentName;
@@ -32,11 +27,11 @@ public class Ms_student {
 	public String getSalt(){
 		return salt;
 	}
-	public String getMajorId(){
-		return majorId;
-	}
 	public String getAddress(){
 		return address;
+	}
+	public String getTeacherName(){
+		return teacherName;
 	}
 	public String getGender(){
 		return gender;
@@ -50,41 +45,26 @@ public class Ms_student {
 	public Integer getActive(){
 		return active;
 	}
-	public String getYears(){
-		return years;
+	public String getPermission(){
+		return permission;
 	}
 	public java.sql.Date getBoth(){
 		return both;
 	}
-	public String getStudentId(){
-		return studentId;
-	}
-	public String getSeat(){
-		return seat;
-	}
 	public String getPassword(){
 		return password;
 	}
-	public String getClassId(){
-		return classId;
-	}
-	public String getStudentName(){
-		return studentName;
+	public String getTeacherId(){
+		return teacherId;
 	}
 	public String getContact(){
 		return contact;
 	}
-	public String getGrade(){
-		return grade;
+	public String getEmail(){
+		return email;
 	}
-	public String getMajorName(){
-		return majorName;
-	}
-	public String get_Class(){
-		return _Class;
-	}
-	public String getStudentImg(){
-		return studentImg;
+	public String getTeacherImg(){
+		return teacherImg;
 	}
 	public void setDepartmentName(String departmentName){
 		this.departmentName = departmentName;
@@ -92,11 +72,11 @@ public class Ms_student {
 	public void setSalt(String salt){
 		this.salt = salt;
 	}
-	public void setMajorId(String majorId){
-		this.majorId = majorId;
-	}
 	public void setAddress(String address){
 		this.address = address;
+	}
+	public void setTeacherName(String teacherName){
+		this.teacherName = teacherName;
 	}
 	public void setGender(String gender){
 		this.gender = gender;
@@ -110,40 +90,25 @@ public class Ms_student {
 	public void setActive(Integer active){
 		this.active = active;
 	}
-	public void setYears(String years){
-		this.years = years;
+	public void setPermission(String permission){
+		this.permission = permission;
 	}
 	public void setBoth(java.sql.Date both){
 		this.both = both;
 	}
-	public void setStudentId(String studentId){
-		this.studentId = studentId;
-	}
-	public void setSeat(String seat){
-		this.seat = seat;
-	}
 	public void setPassword(String password){
 		this.password = password;
 	}
-	public void setClassId(String classId){
-		this.classId = classId;
-	}
-	public void setStudentName(String studentName){
-		this.studentName = studentName;
+	public void setTeacherId(String teacherId){
+		this.teacherId = teacherId;
 	}
 	public void setContact(String contact){
 		this.contact = contact;
 	}
-	public void setGrade(String grade){
-		this.grade = grade;
+	public void setEmail(String email){
+		this.email = email;
 	}
-	public void setMajorName(String majorName){
-		this.majorName = majorName;
-	}
-	public void set_Class(String _Class){
-		this._Class = _Class;
-	}
-	public void setStudentImg(String studentImg){
-		this.studentImg = studentImg;
+	public void setTeacherImg(String teacherImg){
+		this.teacherImg = teacherImg;
 	}
 }

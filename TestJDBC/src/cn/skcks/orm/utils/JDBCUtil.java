@@ -4,6 +4,8 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.Properties;
 
 /*
@@ -70,6 +72,19 @@ public class JDBCUtil {
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
+			}
+		}
+	}
+
+	public static void handleParams(PreparedStatement preparedStatement,Object[] params){
+		if(params != null)
+		{
+			for (int i = 0; i < params.length; i++) {
+				try {
+					preparedStatement.setObject(i+1,params[i]);
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	}

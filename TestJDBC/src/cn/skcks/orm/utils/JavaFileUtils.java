@@ -25,13 +25,22 @@ public class JavaFileUtils {
 
 		String javaFieldType = typeConverter.databaseType2JavaType(columnInfo.getType());
 
+		// Java 保留关键字 过滤
+		String[] javaKeywords = new String[]{"class", "public"};
+
+		for (String keyword : javaKeywords) {
+			if (columnInfo.getField().equals(keyword)) {
+				columnInfo.setField("_"+StringUtils.firstChar2UpperCase(columnInfo.getField()));
+			}
+		}
+
 		javaFieldGetSet.setFieldInfo("\tprivate " + javaFieldType + " " + columnInfo.getField() + ";\r\n");
 
 		StringBuilder src = new StringBuilder();
 
 		src.append("\tpublic ").append(javaFieldType).append(" get")
 				.append(StringUtils.firstChar2UpperCase(columnInfo.getField()))
-				.append("(").append(javaFieldType).append(" ").append(columnInfo.getField()).append("){\n");
+				.append("(){\n");
 		src.append("\t\treturn ").append(columnInfo.getField()).append(";\n");
 		src.append("\t}\n");
 
@@ -39,7 +48,7 @@ public class JavaFileUtils {
 
 		src = new StringBuilder();
 
-		src.append("\tpublic void set").append(StringUtils.firstChar2UpperCase(columnInfo.getField())).append("(){\n");
+		src.append("\tpublic void set").append(StringUtils.firstChar2UpperCase(columnInfo.getField())).append("(").append(javaFieldType).append(" ").append(columnInfo.getField()).append("){\n");
 		src.append("\t\tthis.").append(columnInfo.getField()).append(" = ").append(columnInfo.getField()).append(";\n");
 		src.append("\t}\n");
 
@@ -91,6 +100,7 @@ public class JavaFileUtils {
 	}
 
 	@SuppressWarnings("all")
+	// 创建 Java 类文件
 	public static void createJavaFile(TableInfo tableInfo, TypeConverter converter) {
 		String src = createJavaSRC(tableInfo, converter);
 
@@ -103,11 +113,11 @@ public class JavaFileUtils {
 		File dirFile = new File(dir);
 		File pathFile = new File(path);
 
-		if(!dirFile.exists()){
+		if (!dirFile.exists()) {
 			dirFile.mkdirs();
 		}
 
-		System.out.println(new File(path).getAbsolutePath());
+//		System.out.println(new File(path).getAbsolutePath());
 
 //		System.exit(0);
 
@@ -123,8 +133,16 @@ public class JavaFileUtils {
 		} finally {
 			DbManager.close(bufferedWriter);
 		}
+
 	}
 
+	// 根据 表结构 更新 Java 类文件
+	public static void updateJavaFile() {
+		Map<String, TableInfo> tables = TableManager.tables;
+		for (TableInfo tableInfo : tables.values()) {
+			createJavaFile(tableInfo, new MysqlTypeConverter());
+		}
+	}
 
 	public static void main(String[] args) {
 //		ColumnInfo columnInfo = new ColumnInfo("username","varchar",0);
@@ -140,7 +158,10 @@ public class JavaFileUtils {
 //		System.out.println(System.getProperty("user.dir"));
 
 		Map<String, TableInfo> tables = TableManager.tables;
-		TableInfo tableInfo = tables.get("ms_student");
-		createJavaFile(tableInfo, new MysqlTypeConverter());
+//		TableInfo tableInfo = tables.get("ms_student");
+//		createJavaFile(tableInfo, new MysqlTypeConverter());
+		for (TableInfo tableInfo : tables.values()) {
+			createJavaFile(tableInfo, new MysqlTypeConverter());
+		}
 	}
 }
