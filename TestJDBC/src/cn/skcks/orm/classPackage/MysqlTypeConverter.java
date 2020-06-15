@@ -2,7 +2,14 @@ package cn.skcks.orm.classPackage;
 
 import cn.skcks.orm.interfacePackage.TypeConverter;
 
+/**
+ * Mysql 类型转换器
+ */
 public class MysqlTypeConverter implements TypeConverter {
+
+	/**
+	 * 数据库 数据类型 转化为 Java 数据类型
+	 */
 	@Override
 	public String databaseType2JavaType(String columnType) {
 		if ("VARCHAR".equalsIgnoreCase(columnType) || "CHAR".equalsIgnoreCase(columnType)) {
@@ -46,6 +53,9 @@ public class MysqlTypeConverter implements TypeConverter {
 		return null;
 	}
 
+	/**
+	 * Java 数据类型 转化为 数据库 数据类型
+	 */
 	@Override
 	public String javaType2DatabaseType(String javaType) {
 		return null;

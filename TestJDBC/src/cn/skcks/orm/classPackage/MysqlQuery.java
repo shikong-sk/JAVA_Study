@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Mysql 语句构造
+ */
 public class MysqlQuery implements Query {
 	@Override
 	public int executeDML(String sql, Object[] params) {

@@ -18,8 +18,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-/*
-	获取数据库表结构 并生成 类
+
+/**
+ * 获取数据库表结构 并生成 类
  */
 public class TableManager {
 
@@ -27,6 +28,9 @@ public class TableManager {
 
 	public static Map<Class<?>, TableInfo> tableMap = new HashMap<>();
 
+	/**
+	 * 类加载器
+	 */
 	private static ClassLoader classLoader;
 
 	static {
@@ -81,11 +85,14 @@ public class TableManager {
 		loadTablePackage();
 	}
 
+	/**
+	 * 动态生成并加载Table类
+	 */
 	public static void loadTablePackage() {
 		try {
 			for (TableInfo tableInfo : tables.values()) {
 
-				String path = System.getProperty("user.dir") + File.separator
+				String path = new File(DbManager.getConfig().getGeneratePackagePath()).getAbsolutePath() + File.separator
 						+ "generatePackage" + File.separator
 						+ DbManager.getConfig().getGeneratePackage().replace(".", File.separator)
 						+ File.separator + StringUtils.firstChar2UpperCase(tableInfo.getTable());
@@ -112,6 +119,11 @@ public class TableManager {
 		}
 	}
 
+	/**
+	 *
+	 * @param cls 要加载的类名
+	 * @return 类
+	 */
 	public static Class<?> classLoader(String cls) {
 		try {
 //			// 指定类加载器

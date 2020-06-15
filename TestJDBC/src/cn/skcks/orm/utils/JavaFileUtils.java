@@ -11,15 +11,22 @@ import cn.skcks.orm.interfacePackage.TypeConverter;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/*
-	封装 Java 文件生成 操作
+/**
+ * 封装 Java 文件生成 操作
  */
 public class JavaFileUtils {
-	// 根据字段生成 java 属性信息 varchar id => private String id; 以及相应的 set、get方法
+	/**
+	 * 根据字段生成 java 属性信息 varchar id =&gt; private String id; 以及相应的 set、get方法
+	 * @param columnInfo ColumnInfo 列信息
+	 * @param typeConverter 类型转换器
+	 * @return JavaFieldGetSet java字段 get、set 生成类
+	 */
 	public static JavaFieldGetSet createFieldGetSetSRC(ColumnInfo columnInfo, TypeConverter typeConverter) {
 		JavaFieldGetSet javaFieldGetSet = new JavaFieldGetSet();
 
@@ -57,6 +64,12 @@ public class JavaFileUtils {
 		return javaFieldGetSet;
 	}
 
+	/**
+	 * 生成 Java 代码
+	 * @param tableInfo TableInfo 数据库表信息
+	 * @param converter 类型转换器
+	 * @return 要生成的 Java 代码
+	 */
 	public static String createJavaSRC(TableInfo tableInfo, TypeConverter converter) {
 		StringBuilder src = new StringBuilder();
 
@@ -100,18 +113,22 @@ public class JavaFileUtils {
 	}
 
 	@SuppressWarnings("all")
-	// 创建 Java 类文件
+	/**
+	 * 创建 Java 文件
+	 */
 	public static void createJavaFile(TableInfo tableInfo, TypeConverter converter) {
 		String src = createJavaSRC(tableInfo, converter);
 
-		String dir = System.getProperty("user.dir") + File.separator
-				+ "generatePackage" + File.separator
-				+ File.separator + DbManager.getConfig().getGeneratePackage().replace(".", File.separator);
+		String dir = new File(DbManager.getConfig().getGeneratePackagePath()).getAbsolutePath() + File.separator
+					+ "generatePackage" + File.separator + DbManager.getConfig().getGeneratePackage().replace(".", File.separator);
+
 		String path =
 				dir + File.separator + StringUtils.firstChar2UpperCase(tableInfo.getTable()) + ".java";
 
 		File dirFile = new File(dir);
 		File pathFile = new File(path);
+
+		System.out.println(path);
 
 		if (!dirFile.exists()) {
 			dirFile.mkdirs();
@@ -136,7 +153,9 @@ public class JavaFileUtils {
 
 	}
 
-	// 根据 表结构 更新 Java 类文件
+	/**
+	 * 根据 表结构 更新 Java 类文件
+	 */
 	public static void updateJavaFile() {
 		Map<String, TableInfo> tables = TableManager.tables;
 		for (TableInfo tableInfo : tables.values()) {

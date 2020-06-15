@@ -8,13 +8,15 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
 
-/*
-	封装 JDBC Util 工具类
-	常用操作
+/**
+ * 	封装 JDBC Util 工具类
+ * 	常用操作
  */
 public class JDBCUtil {
 
-	// 读取资源文件信息
+	/**
+	 * 读取资源文件信息
+	 */
 	static Properties properties = null;
 
 	// 加载时调用
@@ -29,6 +31,10 @@ public class JDBCUtil {
 
 	public static final String PREFIX = "jdbc:mysql://";
 
+	/**
+	 * 获取数据库连接
+	 * @return Connection 数据库连接对象
+	 */
 	public static Connection getConnection() {
 		try {
 			// 加载驱动类
@@ -52,6 +58,10 @@ public class JDBCUtil {
 		}
 	}
 
+	/**
+	 * 关闭连接
+	 * @param closeables 要关闭的对象
+	 */
 	public static void close(AutoCloseable... closeables) {
 		for (AutoCloseable closeable : closeables) {
 			try {
@@ -64,6 +74,10 @@ public class JDBCUtil {
 		}
 	}
 
+	/**
+	 * 关闭连接
+	 * @param closeables 要关闭的对象
+	 */
 	public static void close(Closeable... closeables) {
 		for (Closeable closeable : closeables) {
 			try {
@@ -76,6 +90,11 @@ public class JDBCUtil {
 		}
 	}
 
+	/**
+	 * 处理构造参数
+	 * @param preparedStatement sql预处理对象
+	 * @param params 需要构造的参数
+	 */
 	public static void handleParams(PreparedStatement preparedStatement,Object[] params){
 		if(params != null)
 		{

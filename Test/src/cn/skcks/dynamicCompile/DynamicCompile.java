@@ -68,7 +68,7 @@ public class DynamicCompile {
 
 		// 通过反射运行编译好的类
 		try{
-			URL[] urls = new URL[]{new URL("file:/" + path)};
+			URL[] urls = new URL[]{new URL("file://" + path)};
 			URLClassLoader classLoader = new URLClassLoader(urls);
 
 			@SuppressWarnings("rawtypes")

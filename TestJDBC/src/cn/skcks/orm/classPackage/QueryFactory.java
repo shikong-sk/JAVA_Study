@@ -34,6 +34,10 @@ import cn.skcks.orm.interfacePackage.Query;
 //}
 
 // 克隆方式
+
+/**
+ * SQL 语句构造工厂类
+ */
 public class QueryFactory {
 
 	private static QueryOptimized queryObj;
